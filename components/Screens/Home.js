@@ -42,12 +42,16 @@ const Home = () => {
             style={{ height: deviceHeight }}
         >
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                <View style={{ backgroundColor: 'rgba(255, 255, 255, 0.7)', height: 350, width: deviceWidth - 20, borderRadius: 10, paddingTop: 15, marginTop: 50, alignItems: 'center', paddingLeft: 8 }}>
+                <View style={{backgroundColor:"rgba(187, 143, 252, 0.66)", height: 350, width: deviceWidth - 20, borderRadius: 10, paddingTop: 15, marginTop: 50, alignItems: 'center', paddingLeft: 8,borderRadius:15 }}>
+                   <View style={{borderWidth:1,borderRadius: 50,borderColor:"white"}}>
+
+                 
                     <Image
                         style={{ borderRadius: 50, height: 100, width: 100 }}
                         source={{ uri: user.avatar }}
                         defaultSource={require("../../assets/User2.jpeg")}
                     />
+                      </View>
                     <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 15 }}>
                         <Text style={[styles.text, styles.bold, styles.title]}>{user.first_name}</Text>
                         <Text style={[styles.text, styles.bold, styles.title]}>{user.last_name}</Text>
