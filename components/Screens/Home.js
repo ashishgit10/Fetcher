@@ -54,7 +54,7 @@ const Home = () => {
                       </View>
                     <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 15 }}>
                         <Text style={[styles.text, styles.bold, styles.title]}>{user.first_name}</Text>
-                        <Text style={[styles.text, styles.bold, styles.title]}>{user.last_name}</Text>
+                        <Text style={[styles.text, styles.bold, styles.title]}> {user.last_name}</Text>
                     </View>
                     <View style={{ marginLeft: 25, alignSelf: 'flex-start', marginTop: 10 }}>
                         <View style={{ flexDirection: 'row' }}>
